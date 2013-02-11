@@ -1,0 +1,51 @@
+﻿#contenthost {
+    height: 100%;
+    width: 100%;
+}
+ 
+.fragment {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 100px 620px 48px;
+    display: -ms-grid;
+    height: 768px;
+    width: 1366px;
+}
+ 
+    .fragment header {
+        -ms-grid-row: 1;
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+        .fragment header .win-backbutton {
+            -ms-grid-column: 1;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+ 
+        .fragment header .titlearea {
+            -ms-grid-column: 2;
+            margin-top: 17px;
+        }
+ 
+            .fragment header .titlearea .pagetitle {
+                font-family: Segoe UI;
+                font-size: 56px;
+                color: rgb(249, 99, 2);
+                color: rgba(249, 99, 2, 1.0);
+            }
+ 
+.scrollable {
+    overflow: auto;
+}
+ 
+.section {
+-ms-grid-column: 1;
+-ms-grid-row: 2;
+display: -ms-grid;
+-ms-grid-columns: 390px 390px 390px;
+-ms-grid-rows: 50px 320px 150px 60px;
+margin-left: 120px;
+margin-top: 40px;
+margin-bottom: 60px;
+}
