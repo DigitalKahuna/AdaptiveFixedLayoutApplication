@@ -1,36 +1,40 @@
-﻿#contenthost {
+﻿html {
+    font-size: 62.5%;
+}
+ 
+#contenthost {
     height: 100%;
     width: 100%;
 }
  
 .fragment {
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 100px 620px 48px;
+    -ms-grid-rows: 10rem 62rem 4.8rem;
     display: -ms-grid;
-    height: 768px;
-    width: 1366px;
+    height: 100%;
+    width: 100%;
 }
  
     .fragment header {
         -ms-grid-row: 1;
-        -ms-grid-columns: 120px 1fr;
+        -ms-grid-columns: 12rem 1fr;
         -ms-grid-rows: 1fr;
         display: -ms-grid;
     }
         .fragment header .win-backbutton {
             -ms-grid-column: 1;
-            margin-left: 40px;
-            margin-top: 40px;
+            margin-left: 4rem;
+            margin-top: 4rem;
         }
  
         .fragment header .titlearea {
             -ms-grid-column: 2;
-            margin-top: 17px;
+            margin-top: 1.7rem;
         }
  
             .fragment header .titlearea .pagetitle {
                 font-family: Segoe UI;
-                font-size: 56px;
+                font-size: 5.6rem;
                 color: rgb(249, 99, 2);
                 color: rgba(249, 99, 2, 1.0);
             }
@@ -43,9 +47,33 @@
 -ms-grid-column: 1;
 -ms-grid-row: 2;
 display: -ms-grid;
--ms-grid-columns: 390px 390px 390px;
--ms-grid-rows: 50px 320px 150px 60px;
-margin-left: 120px;
-margin-top: 40px;
-margin-bottom: 60px;
+-ms-grid-columns: 39rem 39rem 39rem;
+-ms-grid-rows: 5rem 32rem 15rem 6rem;
+margin-left: 12rem;
+margin-top: 4rem;
+margin-bottom: 6rem;
+}
+ 
+@media screen and (device-height : 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+ 
+@media screen and (device-height : 800px) {
+    html {
+        font-size: 65.1041666%;
+    }
+}
+ 
+@media screen and (device-height : 1080px) {
+    html {
+        font-size: 87.890625%;
+    }
+}
+ 
+@media screen and (device-height : 1440px) {
+    html {
+        font-size:117.1875%
+    }
 }
